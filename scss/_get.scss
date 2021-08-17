@@ -1,0 +1,77 @@
+
+.get {
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: -100px;
+  
+  .container {
+    background: $headerbg;
+    box-shadow: 0 0 16px 2px #0000002e;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 800px;
+    border-radius: 10px;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+
+    // h1 {}
+    p {
+      width: 700px;
+      max-width: 700px;
+      margin: 0 auto;
+
+      @media (max-width: 768px) {
+        width: 400px;
+      }
+      @media (max-width: 418px) {
+        width: 80%;
+      }
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      width: 100%;
+      @media (max-width: 818px) {
+        flex-direction: column;
+      }
+
+      input {
+        padding: 14px 20px;
+        background: white;
+        border: none;
+        border-radius: 50px;
+        width: 500px;
+        margin-right: 15px;
+        outline: none;
+        @media (max-width: 818px) {
+          display: block;
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        &::placeholder {
+          font-size: 12px;
+          color: #ccc;
+        }
+      }
+      button {
+        background: linear-gradient(to right, $syan, $blue);
+        border: none;
+        padding: 14px 20px;
+        border-radius: 50px;
+        color: white;
+        @media (max-width: 818px) {
+          display: block;
+          width: 80%;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

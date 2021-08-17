@@ -1,0 +1,72 @@
+
+.stay {
+  margin-top: 10rem;
+  font-family: $relway;
+
+  .container {
+    color: white;
+
+    img {
+      width: 95%;
+    }
+    .text {
+      margin-top: 80px;
+      
+      @media (max-width: 1200px) {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 600;
+        width: 400px;
+        @media (max-width: 992px) {
+          width: 100%;
+          font-size: 35px;
+          margin-top: 25px;
+        }
+        @media (max-width: 768px) {
+          font-size: 25px;
+        }
+        @media (max-width: 432px) {
+          font-size: 22px;
+        }
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        @media (max-width: 432px) {
+          font-size: 16px;
+        }
+      }
+      a {
+        color: $syan;
+        text-decoration: none;
+        border-bottom: 1px solid $syan;
+        padding-bottom: 10px;
+        transition: .3s;
+        @media (max-width: 432px) {
+          font-size: 18px;
+        }
+
+        &:hover i {
+          background: white;
+        }
+        &:hover {
+          color: white;
+          border-color: white;
+        }
+
+        i {
+          font-size: 9px;
+          background: $syan;
+          border-radius: 50px;
+          padding: 4px;
+          color: $mainbg;
+          margin-left: 6px;
+          transition: .3s;
+        }
+      }
+    }
+  }
+}
